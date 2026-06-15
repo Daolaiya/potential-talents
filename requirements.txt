@@ -1,0 +1,31 @@
+# Potential Talents -- Python dependencies
+# Tested with Python 3.11 (kernel reported 3.11.7).
+# Floor-only pins are used to stay flexible; bump as needed.
+
+# --- Core scientific stack ---
+numpy>=1.24,<3
+pandas>=1.5,<3
+matplotlib>=3.6
+seaborn>=0.12
+
+# --- NLP ---
+nltk>=3.8                 # word_tokenize, stopwords, lemmatizer, PorterStemmer
+gensim>=4.3               # gensim.downloader (word2vec-google-news-300), deaccent
+scikit-learn>=1.2         # TfidfVectorizer, cosine_similarity
+
+# --- Transformers / embeddings ---
+# sentence-transformers will install a compatible torch automatically,
+# but pinning torch explicitly avoids surprises on Windows / CPU-only installs.
+sentence-transformers>=2.5
+torch>=2.0
+
+# --- Demo / UI ---
+gradio>=4.0
+
+# --- Notebook runtime ---
+jupyter>=1.0
+ipykernel>=6.25
+ipywidgets>=8.0           # nicer rendering of dataframes / progress bars
+
+# --- One-time NLTK data the code needs (download after install) ---
+# python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt'); nltk.download('punkt_tab'); nltk.download('wordnet'); nltk.download('omw-1.4')"
