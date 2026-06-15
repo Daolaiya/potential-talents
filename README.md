@@ -47,7 +47,7 @@ candidate is "starred", and ships a tiny Gradio demo app.
 
 **Download Data:**
 - https://docs.google.com/spreadsheets/d/117X6i53dKiO7w6kuA1g1TpdTlv1173h_dPlJt5cNNMU/edit?usp=sharing
-- A local copy is included as [`raw_data.csv`](./raw_data.csv) (104 rows).
+- A local copy is included as [`data_raw.csv`](./data_raw.csv) (104 rows).
 
 **Goal(s):**
 - Predict how fit the candidate is based on their available information (variable `fit`).
@@ -69,7 +69,7 @@ candidate is "starred", and ships a tiny Gradio demo app.
 ```
 PT/
 ├── notebook_pt.ipynb     # main analysis + modeling + demo app
-├── raw_data.csv          # source data (104 candidates)
+├── data_raw.csv          # source data (104 candidates)
 ├── requirements.txt      # Python dependencies
 └── README.md             # this file
 ```
